@@ -1,6 +1,6 @@
 ---
 name: research
-description: A skill that conducts fact-based research based on user input. It is expected to be invoked with prompts instructing code-based or web information research and cause analysis, such as "research ~", "look up ~", "check the cause of ~", or "summarize information about ~".
+description: A skill that conducts fact-based research based on user input. It is expected to be invoked with prompts instructing code-based or web information research and cause analysis, such as "〜を調査して", "〜を調べて", "〜の原因を確認して", "〜について情報をまとめて", "research ~", "look up ~", "check the cause of ~" or "summarize information about ~".
 allowed-tools: WebSearch(*), WebFetch(*), Read(*), Grep(*), Glob(*), LSP(*)
 ---
 
