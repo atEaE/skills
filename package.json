@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "my agent skills",
   "scripts": {
+    "lint:json": "biome check .",
+    "lint:json:fix": "biome check --fix .",
+    "format:json": "biome format .",
+    "format:json:fix": "biome format --fix .",
     "lint:md": "markdownlint-cli2 '**/*.md'",
     "lint:md:fix": "markdownlint-cli2 --fix '**/*.md'"
   },
@@ -12,6 +16,7 @@
   },
   "author": "atEaE",
   "devDependencies": {
+    "@biomejs/biome": "^2.4.4",
     "markdownlint-cli2": "^0.21.0"
   }
 }
