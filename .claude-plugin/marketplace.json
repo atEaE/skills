@@ -1,0 +1,13 @@
+{
+  "name": "cc-plugins",
+  "owner": {
+    "name": "Eita Aoki"
+  },
+  "plugins": [
+    {
+      "name": "research",
+      "source": "./plugins/research",
+      "description": "research plugin for fetching data from the web"
+    }
+  ]
+}
