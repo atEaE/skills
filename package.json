@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "my agent skills",
   "scripts": {
-    "lint:json": "biome check .",
-    "lint:json:fix": "biome check --fix .",
-    "format:json": "biome format .",
-    "format:json:fix": "biome format --fix .",
+    "lint": "biome check .",
+    "lint:fix": "biome check --fix .",
+    "format": "biome format .",
+    "format:fix": "biome format --fix .",
     "lint:md": "markdownlint-cli2 '**/*.md'",
     "lint:md:fix": "markdownlint-cli2 --fix '**/*.md'"
   },

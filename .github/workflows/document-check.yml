@@ -1,0 +1,25 @@
+name: Document Check
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths:
+      - '*.md'
+      - '*.json'
+      - '*.jsonc'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/document-check.yml'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+      - run: npm run lint
